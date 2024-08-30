@@ -1,0 +1,163 @@
+/* style.css */
+
+/* Reseta alguns estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto em cinza escuro */
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #d1e7ff; /* Cabeçalho em azul suave */
+    border-bottom: 2px solid #005f8b; /* Linha mais visível para separação */
+    padding: 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px; /* Altura do logo */
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005f8b; /* Azul escuro para contraste */
+}
+
+.navigation .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation .menu li a {
+    text-decoration: none;
+    color: #005f8b; /* Azul escuro para links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation .menu li a:hover {
+    color: #0056f7; /* Mudança suave para hover */
+}
+
+/* Estilo da seção de conteúdo principal */
+.content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e0f7e9; /* Fundo verde claro e suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Estilo para os artigos da seção de destaque */
+.highlight-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem ao tamanho da tela */
+}
+
+article {
+    background-color: #f0fff4; /* Fundo branco esverdeado para contraste */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os blocos */
+    flex: 1; /* Flexível para ocupar espaço disponível */
+    min-width: 250px; /* Largura mínima para responsividade */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    background-color: #ccffdd; /* Fundo mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+article h3 {
+    color: #006400; /* Verde escuro para o título */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #333; /* Texto em cinza escuro */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #008000; /* Verde mais escuro para o botão */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #006400; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #d1e7ff; /* Rodapé azul suave */
+    padding: 20px;
+    border-top: 2px solid #005f8b; /* Linha visível para separação */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget {
+    flex: 1; /* Flexível para ocupar espaço disponível */
+    padding: 10px;
+}
+
+.widget h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #005f8b; /* Azul escuro */
+}
+
+.widget p {
+    color: #333; /* Texto em cinza escuro */
+}
+
+.widget a {
+    color: #ff7f50; /* Coral suave para links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.widget a:hover {
+    color: #ff4500; /* Cor de destaque ao passar o mouse */
+}

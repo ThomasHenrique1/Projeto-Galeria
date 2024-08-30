@@ -1,0 +1,134 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo geral do body para aplicar a fonte */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    background-color: #f4f4f9; /* Cor de fundo neutra e suave */
+    color: #333; /* Cor do texto em cinza escuro */
+}
+
+/* Estilo para a seção da galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f9; /* Cor de fundo neutra e suave */
+    border-radius: 10px;
+}
+
+/* Estilo para cada item da galeria */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* Cor de fundo branca */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 15px; /* Adiciona espaçamento interno */
+}
+
+/* Ajuste na imagem da galeria */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção */
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilo para o título da galeria */
+.gallery-item h2 {
+    font-size: 1.6em; /* Aumenta o tamanho da fonte */
+    font-weight: 700; /* Negrito */
+    color: #00796b; /* Cor verde escuro para destaque */
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+/* Estilo para o parágrafo da galeria */
+.gallery-item p {
+    font-size: 1.1em; /* Aumenta o tamanho da fonte */
+    color: #555; /* Cor cinza mais clara para o texto */
+    padding: 10px;
+    text-align: center;
+    background-color: #e0f2f1; /* Fundo verde suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+}
+
+/* Estilo de hover para o item da galeria */
+.gallery-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+}
+
+/* Estilo de hover para a imagem */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilo do título ao passar o mouse */
+.gallery-item:hover h2 {
+    color: #004d40; /* Muda a cor do título ao passar o mouse */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #e0f2f1; /* Azul muito suave */
+    border-bottom: 2px solid #004d40; /* Linha de separação verde escuro */
+    padding: 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px; /* Altura do logo */
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004d40; /* Verde escuro para contraste */
+}
+
+.navigation .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation .menu li a {
+    text-decoration: none;
+    color: #004d40; /* Verde escuro para links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation .menu li a:hover {
+    color: #00796b; /* Mudança suave para hover */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #e0f2f1; /* Azul suave */
+    padding: 20px;
+    border-top: 2px solid #004d40; /* Linha de separação verde escuro */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #004d40; /* Verde escuro */
+}
